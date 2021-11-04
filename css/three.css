@@ -5,7 +5,7 @@ body {
     overflow-x: hidden;
 }
 
-#info {
+#info, #phone {
     position: absolute;
     top: 15px;
     left: 15px;
@@ -13,7 +13,7 @@ body {
     color: white;
 }
 
-#info > * {
+#info > *, #phone > * {
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
 }
@@ -23,44 +23,14 @@ body {
 }
 
 
-#controls {
-    color: white;
+#phone {
     display: none;
 }
 
-#controls > * {
-    font-size: 3em;
-    cursor: pointer;
-}
-
-#controls #up {
-    position: absolute;
-    top: 20px;
-    left: 48%
-}
-
-#controls #right {
-    position: absolute;
-    top: 50%;
-    left: 90%
-}
-
-#controls #down {
-    position: absolute;
-    top: 90%;
-    left: 48%
-}
-
-
-#controls #left {
-    position: absolute;
-    top: 50%;
-    left: 5%
-}
 
 @media only screen and (max-width: 800px) {
 
-    #controls {
+    #phone {
         display: block;
     }
 

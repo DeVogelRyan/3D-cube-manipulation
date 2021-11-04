@@ -66,22 +66,6 @@ function changeColor() {
     cube.material.color.set(Number(finalColor))
 }
 
-function mobileIncreaseX(){
-    camera.position.x += 1;
-}
-
-function mobileDecreaseX(){
-    camera.position.x -= 1;
-}
-
-function mobileIncreaseY(){
-    camera.position.y += 1;
-}
-
-function mobiledecreaseY(){
-    camera.position.y -= 1;
-}
-
 function addEventListener() {
     document.addEventListener('keydown', ChangePos);
     document.getElementById("color").addEventListener('input', changeColor)
@@ -89,10 +73,6 @@ function addEventListener() {
         e.preventDefault();
     }, false);
 
-    document.getElementById("up").addEventListener('click', mobiledecreaseY);
-    document.getElementById("right").addEventListener('click', mobileDecreaseX);
-    document.getElementById("down").addEventListener('click', mobileIncreaseY);
-    document.getElementById("left").addEventListener('click', mobileIncreaseX);
 }
 
 function animate() {
